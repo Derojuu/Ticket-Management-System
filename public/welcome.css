@@ -1,0 +1,346 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+
+    
+}
+
+.logo-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+
+  }
+  
+  .logo-container img {
+    width: 300px; 
+    height: 100px; 
+    mix-blend-mode: multiply;
+  }
+
+
+
+
+.welcome-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100px;
+    height: 70px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+
+}
+
+.btn-get-started {
+    background-color: #02b608;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-get-started:hover {
+    background-color: #034706;
+}
+
+
+@media (max-width: 1080px) {
+    .container {
+        padding: 20px;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .form__label {
+        font-size: 14px;
+    }
+
+    .form__field {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .logo-container img {
+        width: 150px;
+        height: 50px;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 90%;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .form__label, .form__field, button {
+        font-size: 12px;
+    }
+    .logo-container img {
+        width: 100px;
+        height: 33px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .container {
+        padding: 15px;
+        width: 85%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .form__label, .form__field, button {
+        font-size: 13px;
+    }
+    .logo-container img {
+        width: 120px;
+        height: 40px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        padding: 20px;
+        width: 80%;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .form__label, .form__field, button {
+        font-size: 14px;
+    }
+    .logo-container img {
+        width: 150px;
+        height: 50px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        padding: 25px;
+        width: 75%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .form__label, .form__field, button {
+        font-size: 15px;
+    }
+    .logo-container img {
+        width: 180px;
+        height: 60px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 30px;
+        width: 70%;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .form__label, .form__field, button {
+        font-size: 16px;
+    }
+    .logo-container img {
+        width: 200px;
+        height: 66px;
+    }
+}
+
+/* Desktop and Large Screens (original design) */
+@media (min-width: 1024px) {
+    .welcome-container {
+        max-width: 400px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .logo-container img {
+        width: 300px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .form__label, 
+    .form__field, 
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Medium Screens (tablets and small laptops) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .welcome-container {
+        max-width: 380px;
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .logo-container img {
+        width: 250px;
+        height: 83px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .form__label, 
+    .form__field, 
+    button {
+        font-size: 15px;
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .welcome-container {
+        max-width: 340px;
+        padding: 15px;
+        margin: 25px auto;
+    }
+
+    .logo-container img {
+        width: 200px;
+        height: 66px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .form__label, 
+    .form__field, 
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .welcome-container {
+        max-width: 300px;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .logo-container img {
+        width: 150px;
+        height: 50px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .form__label, 
+    .form__field, 
+    button {
+        font-size: 12px;
+    }
+
+    .btn-get-started {
+        padding: 8px 16px;
+    }
+}
+
+/* Tablets and Small Laptops */
+@media (max-width: 1024px) {
+    .welcome-container {
+        max-width: 380px;
+        padding: 20px;
+    }
+
+    .logo-container img {
+        width: 250px;
+        height: 83px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+/* Large Mobile Devices */
+@media (max-width: 768px) {
+    .welcome-container {
+        max-width: 340px;
+        padding: 15px;
+    }
+
+    .logo-container img {
+        width: 200px;
+        height: 66px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .form__label, 
+    .form__field, 
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 320px) {
+    .welcome-container {
+        max-width: 280px;
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .logo-container img {
+        width: 120px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .form__label, 
+    .form__field, 
+    button {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="register.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="viewport" content="width=device=width,initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form id="registerForm" method="post" action="/register">
+      <div class="form__group field">
+        <input type="text" class="form__field" id="username" placeholder="Username" required>
+        <label for="username" class="form__label">Username</label>
+      </div>
+      <div class="form__group field">
+        <input type="password" class="form__field" id="password" placeholder="Password" required>
+        <label for="password" class="form__label">Password</label>
+      </div>
+      <div class="form__group field">
+        <input type="password" class="form__field" id="retypePassword" placeholder="Retype Password" required>
+        <label for="retypePassword" class="form__label">Retype Password</label>
+      </div>
+      <span class="password-reveal-icon" onclick="togglePassword()"></span>
+      <span id = 'password-strength'></span>
+      <div class="button-container">
+        <button type="submit"><span>Register</span></button>
+      </div>
+      <p id="error-message" style="color: red;"></p>
+    </form>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>
+
+        
+
+
+      <!--<div class="input-field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-field">
+        <label for="retypePassword">Retype Password</label>
+        <input type="password" id="retypePassword" name="retypePassword" required>
+      </div>
+      <div class="button-container">
+        <button type="submit"><span>Register</span></button>
+        <p id="error-message" style="color: red;"></p>
+      </div>-->
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Management System Dashboard</title>
+    <link rel="stylesheet" href="os.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="logo-container"> <img src="./pics/logo2.png" alt="Logo"></div>
+            <h1>Ticket Management System Dashboard</h1>
+            <p>Manage and track support tickets efficiently.</p>
+        </header>
+
+        <!-- Navigation for different roles (Support Staff, End User) -->
+        <nav>
+            <button onclick="showSection('openTickets')">Open Tickets</button>
+            <button onclick="showSection('closedTickets')">Closed Tickets</button>
+            <button onclick="showSection('notifications')">Notifications</button>
+            <button onclick="showSection('analytics')">Reports & Analytics</button>
+        </nav>
+
+        <!-- Ticket Management Sections -->
+        <section id="openTickets" class="section active">
+            <h2>Open Tickets</h2>
+        
+            <!-- Ticket headers -->
+            <div class="ticket-headers">
+                <span>Name</span>
+                <span>Office</span>
+                <span>Phone Number</span>
+                <span>Ticket Description</span>
+                <span>Assigned To</span>
+                <span>Actions</span>
+            </div>
+        
+            <!-- List for ticket entries -->
+            <ul id="openTicketList"></ul>
+        
+            <!-- Input fields to add a new ticket -->
+            <div class="new-ticket-form">
+                <input type="text" id="ticketName" placeholder="Name">
+                <input type="text" id="ticketOffice" placeholder="Office">
+                <input type="text" id="ticketPhone" placeholder="Phone Number">
+                <input type="text" id="ticketDescription" placeholder="Description">
+                <select id="ticketAssignedTo">
+                    <option value="">Assigned To</option>
+                    <option value="Hardware Team">Hardware Team</option>
+                    <option value="Network Team">Network Team</option>
+                    <option value="Software Team">Software Team</option>
+                    <option value="Admin Team">Admin Team</option>
+                    <option value="Helpdesk Team">Helpdesk Team</option>
+                    <option value="Data Infrastructure Team">Data Infrastructure Team</option>
+                </select>
+                <button onclick="addTicket()" id="but">Add Ticket</button>
+            </div>
+        </section>
+
+        <section id="closedTickets" class="section">
+            <h2>Closed Tickets</h2>
+            
+            <!-- Ticket headers for closed tickets -->
+            <div class="ticket-headers">
+                <span>Name</span>
+                <span>Office</span>
+                <span>Phone Number</span>
+                <span>Ticket Description</span>
+                <span>Assigned To</span>
+            </div>
+
+            <ul id="closedTicketList"></ul>
+        </section>
+
+        <!-- Notifications -->
+        <section id="notifications" class="section">
+            <h2>Notifications</h2>
+            <p>Real-time updates and alerts will appear here.</p>
+            <div id="notificationList"></div>
+        </section>
+
+        <!-- Reports & Analytics -->
+         <!-- Reports & Analytics -->
+        <section id="analytics" class="section">
+            <h2>Reports & Analytics</h2>
+            <p>View metrics and team performance data here.</p>
+            <!-- Placeholder for analytics content -->
+            <div class="analytics-content">
+                <p>Total Tickets: <strong id="totalTickets">0</strong></p>
+                <p>Total Tickets Closed: <strong id="totalClosedTickets">0</strong></p>
+                <p>Total Tickets Opened : <strong id="ticketsOpenedThisWeek">0</strong></p>
+            </div>
+            <!-- Filter Buttons --> 
+             <div class="analytics-filters"> 
+                <button onclick="filterAnalytics('daily')">Daily</button> 
+                <button onclick="filterAnalytics('weekly')">Weekly</button> 
+                <button onclick="filterAnalytics('monthly')">Monthly</button> 
+            </div>
+        </section> 
+    </div>
+    <script src="os.js"></script>
+</body>
+</html>
