@@ -1,8 +1,9 @@
+const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const session = require('express-session'); // Import the session middleware
-const cors = require('cors');
+
 
 const app = express();
 const PORT = 3000;
