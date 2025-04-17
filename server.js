@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(cors({
-    origin: '*', 
+    origin: 'http://ticket-management-system-omega.vercel.app', 
     credentials: true   // Allow cookies and other credentials
 }));
 
