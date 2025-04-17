@@ -75,6 +75,6 @@ document.getElementById('form_id').addEventListener('submit', async function(eve
         }
     } catch (error) {
         alert('An error occurred. Please try again.');
-        errorMessage.textContent = 'An error occurred. Please try again.';
+        
     }
 });
